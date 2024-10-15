@@ -120,7 +120,7 @@ Node* insertPosition(Node* head, int el,int k){
             return NULL;
         }}
     if (k==1){
-        return new Node(el);
+        return new Node(el,head);
     }
     int count =0;
     Node* temp= head;
@@ -137,7 +137,7 @@ Node* insertPosition(Node* head, int el,int k){
 int main() {
     vector<int> arr = {2, 45, 6, 7};
     Node* head = convertArr2LL(arr);
-    head= insertPosition(head,100,5);
+    head= insertPosition(head,100,1);
     printLL(head);
     
     return 0;
