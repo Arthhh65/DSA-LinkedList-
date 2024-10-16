@@ -173,6 +173,5 @@ void insertbeforeNode(Node*node , int val){
 int main(){
     vector<int>arr={2,4,5,6,7,9};
     Node* head = convertArr2DLL(arr);
-    head = kthelelement(head,8,7);
     printDLL(head);
 }
